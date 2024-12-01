@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,10 +34,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp F        &kp P         &kp R      &kp J    &kp L     &kp U      &kp Y    &kp APOS  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &mt LCTRL S  &mt LSHIFT T  &kp G      &kp M    &kp N     &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C        &kp D         &kp V      &kp K    &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &mo 1        &kp SPACE     &kp TAB    &kp RET  &kp BSPC  &mo 2
+&kp ESC    &kp Q            &kp W            &kp F         &kp P          &kp R      &kp J    &kp L               &kp U         &kp Y             &kp APOS          &kp BSPC
+&kp LCTRL  &hrm LEFT_GUI A  &hrm LEFT_ALT R  &hrm LCTRL S  &hrm LSHIFT T  &kp G      &kp M    &hrm RIGHT_SHIFT N  &hrm RCTRL E  &hrm RIGHT_ALT I  &hrm RIGHT_GUI O  &kp SQT
+&kp LSHFT  &kp Z            &kp X            &kp C         &kp D          &kp V      &kp K    &kp H               &kp COMMA     &kp DOT           &kp FSLH          &kp ESC
+                                             &mo 1         &kp SPACE      &kp TAB    &kp RET  &kp BSPC            &mo 2
             >;
         };
 
