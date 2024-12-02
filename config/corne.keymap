@@ -48,7 +48,7 @@
 &kp ESC  &kp Q            &kp W            &kp F         &kp P          &kp R      &kp J    &kp L               &kp U         &kp Y             &kp APOS          &trans
 &trans   &hrm LEFT_GUI A  &hrm LEFT_ALT R  &hrm LCTRL S  &hrm LSHIFT T  &kp G      &kp M    &hrm RIGHT_SHIFT N  &hrm RCTRL E  &hrm RIGHT_ALT I  &hrm RIGHT_GUI O  &trans
 &trans   &kp Z            &kp X            &kp C         &kp D          &kp V      &kp K    &kp H               &kp COMMA     &kp DOT           &kp FSLH          &trans
-                                           &mo 1         &kp SPACE      &kp TAB    &kp RET  &kp BSPC            &mo 0
+                                           &trans        &kp SPACE      &kp TAB    &kp RET  &kp BSPC            &trans
             >;
         };
 
