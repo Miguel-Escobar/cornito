@@ -25,7 +25,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -36,7 +36,7 @@
 &kp ESC    &kp Q            &kp W            &kp F         &kp P          &kp R      &kp J    &kp L               &kp U         &kp Y             &kp APOS          &kp BSPC
 &kp LCTRL  &hrm LEFT_GUI A  &hrm LEFT_ALT R  &hrm LCTRL S  &hrm LSHIFT T  &kp G      &kp M    &hrm RIGHT_SHIFT N  &hrm RCTRL E  &hrm RIGHT_ALT I  &hrm RIGHT_GUI O  &kp SQT
 &kp LSHFT  &kp Z            &kp X            &kp C         &kp D          &kp V      &kp K    &kp H               &kp COMMA     &kp DOT           &kp FSLH          &kp ESC
-                                             &mo 1         &kp SPACE      &kp TAB    &kp RET  &kp BSPC            &mo 2
+                                             &mo 1         &kp SPACE      &kp TAB    &kp RET  &kp BSPC            &mo 0
             >;
         };
 
@@ -48,34 +48,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7  &kp N8   &kp N9  &kp ASTERISK    &kp N6    &kp N7          &kp N8            &kp N9        &kp N0        &kp BSPC
-&kp EQUAL         &kp SEMICOLON      &kp N4  &kp N5   &kp N6  &kp PLUS        &kp LEFT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
-&kp UNDERSCORE    &kp CARET          &kp N1  &kp N2   &kp N3  &kp SLASH       &trans    &trans          &trans            &trans        &trans        &trans
-                                             &kp DOT  &kp N0  &kp MINUS       &kp RET   &trans          &kp RALT
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7  &kp N8   &kp N9  &kp ASTERISK    &trans  &trans          &trans            &trans        &trans        &trans
+&kp EQUAL         &kp SEMICOLON      &kp N4  &kp N5   &kp N6  &kp PLUS        &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&kp UNDERSCORE    &kp CARET          &kp N1  &kp N2   &kp N3  &kp SLASH       &trans  &trans          &trans            &trans        &trans        &trans
+                                             &kp DOT  &kp N0  &kp MINUS       &trans  &trans          &trans
             >;
         };
 
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+        layer_2 {
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp  &kp SQT                    &kp LESS_THAN        &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT     &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT MINUS  &hrm LCTRL PLUS   &hrm LSHFT EQUAL   &kp HASH    &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp CARET                  &kp SLASH            &kp ASTERISK      &kp BACKSLASH      &kp         &kp  &kp  &kp  &kp  &kp  &kp
+                                                     &kp               &kp                &kp         &kp  &kp  &kp
             >;
         };
     };
