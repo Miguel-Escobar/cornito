@@ -55,12 +55,12 @@
             >;
         };
 
-        layer_2 {
+        Symbol {
             bindings = <
-&kp  &kp SQT                    &kp LESS_THAN        &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT     &kp AMPERSAND  &kp         &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &kp PERCENT              &kp
-&kp  &hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT MINUS  &hrm LCTRL PLUS   &hrm LSHFT EQUAL   &kp HASH    &kp PIPE       &kp COLON   &hrm RIGHT_CONTROL LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_GUI QUESTION  &kp
-&kp  &kp CARET                  &kp SLASH            &kp ASTERISK      &kp BACKSLASH      &kp         &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &kp
-                                                     &kp               &kp                &kp         &kp            &kp         &kp
+&kp  &kp SQT                    &kp LESS_THAN        &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT      &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &kp PERCENT              &kp
+&kp  &hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT MINUS  &hrm LCTRL PLUS   &hrm LSHFT EQUAL   &kp HASH     &kp PIPE       &kp COLON      &hrm RIGHT_CONTROL LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_GUI QUESTION  &kp
+&kp  &kp CARET                  &kp SLASH            &kp ASTERISK      &kp BACKSLASH      &kp GRAVE    &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &kp
+                                                     &kp               &kp                &kp          &kp            &kp            &kp
             >;
         };
     };
