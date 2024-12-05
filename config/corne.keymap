@@ -61,9 +61,11 @@
 &kp Z     &kp X            &kp F            &kp L         &kp C          &kp W        &kp MINUS     &kp U               &kp O         &kp Y              &kp K             &to 5
                                             &htl 4 TAB    &htl 2 T       &kp SPACE    &htl 1 ENTER  &kp BACKSPACE       &htl 3 ESC
             >;
+
+            label = "Base";
         };
 
-        number {
+        Number {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -76,6 +78,8 @@
 &kp UNDERSCORE    &kp CARET          &kp N1  &kp N2   &kp N3  &kp SLASH       &trans  &trans          &trans            &trans        &trans        &trans
                                              &kp DOT  &kp N0  &kp MINUS       &trans  &trans          &trans
             >;
+
+            label = "num";
         };
 
         Symbol {
@@ -85,6 +89,8 @@
 &trans  &kp CARET                  &kp SLASH            &kp ASTERISK      &kp BACKSLASH      &kp GRAVE    &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &trans
                                                         &trans            &trans             &trans       &trans         &trans         &trans
             >;
+
+            label = "sym";
         };
 
         Function {
@@ -94,6 +100,8 @@
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp SCROLLLOCK     &kp K_MUTE         &trans           &trans             &trans         &trans         &bt BT_CLR
                          &trans   &trans   &trans             &trans             &trans           &trans
             >;
+
+            label = "fun";
         };
 
         Navigation {
@@ -103,6 +111,8 @@
 &trans  &trans        &trans        &trans            &trans          &trans    &trans     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
                                     &trans            &trans          &none     &kp ENTER  &mkp LCLK       &mkp RCLK
             >;
+
+            label = "nav";
         };
 
         Game-Normal {
@@ -112,6 +122,8 @@
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &to 0
                          &kp LALT  &kp SPACE  &mo 1    &kp ENTER  &kp BSPC  &kp RALT
             >;
+
+            label = "game";
         };
     };
 };
