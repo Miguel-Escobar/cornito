@@ -179,9 +179,9 @@
 
         Game {
             bindings = <
-&kp ESCAPE  &kp J  &kp G  &kp M  &kp P  &kp V        &kp SEMI   &kp DOT  &kp FSLH  &kp DQT  &kp SQT  &kp LS(RPAR)
-&kp Q       &kp R  &kp S  &kp N  &kp D  &kp B        &kp COMMA  &kp A    &kp E     &kp I    &kp H    &kp LS(LPAR)
-&kp Z       &kp X  &kp F  &kp L  &kp C  &kp W        &kp MINUS  &kp U    &kp O     &kp Y    &kp K    &to 0
+&kp ESCAPE  &kp J  &kp G  &kp M  &kp P  &kp V        &kp ES_SEMI   &kp ES_DOT  &kp ES_SLASH  &kp ES_DOUBLE_QUOTES  &kp ES_SINGLE_QUOTE  &kp ES_RIGHT_PARENTHESIS
+&kp Q       &kp R  &kp S  &kp N  &kp D  &kp B        &kp ES_COMMA  &kp A       &kp E         &kp I                 &kp H                &kp ES_N_TILDE
+&kp Z       &kp X  &kp F  &kp L  &kp C  &kp W        &kp ES_MINUS  &kp U       &kp O         &kp Y                 &kp K                &to 0
                           &sl 6  &kp T  &kp SPACE    &trans     &trans   &trans
             >;
 
