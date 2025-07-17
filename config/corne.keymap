@@ -126,7 +126,7 @@
             bindings = <
 &kp ES_HASH  &kp ES_J            &kp ES_G            &kp ES_M         &kp ES_P          &kp ES_V       &kp ES_SEMI   &kp ES_DOT             &kp ES_SLASH     &kp ES_DOUBLE_QUOTES  &kp ES_SINGLE_QUOTE  &kp ES_RIGHT_PARENTHESIS
 &kp ES_Q     &hrm LEFT_GUI ES_R  &hrm LEFT_ALT ES_S  &hrm LCTRL ES_N  &hrm LSHIFT ES_D  &kp ES_B       &kp ES_COMMA  &hrm RIGHT_SHIFT ES_A  &hrm RCTRL ES_E  &hrm RIGHT_ALT ES_I   &hrm RIGHT_GUI ES_H  &kp ES_N_TILDE
-&kp ES_Z     &kp ES_X            &kp ES_F            &kp ES_L         &kp ES_C          &kp ES_W       &kp ES_MINUS  &kp ES_U               &kp ES_O         &kp ES_Y              &kp ES_K             &kp LEFT_SHIFT
+&kp ES_Z     &kp ES_X            &kp ES_F            &kp ES_L         &kp ES_C          &kp ES_W       &kp ES_MINUS  &kp ES_U               &kp ES_O         &kp ES_Y              &kp ES_K             &to 5
                                                      &htl 3 TAB       &htl 2 ES_T       &htl 4 ESCAPE  &htl 1 ENTER  &kp SPACE              &kp BACKSPACE
             >;
 
